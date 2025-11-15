@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradley Smith - Cybersecurity Portfolio</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts (Inter for body, Roboto Mono for headings) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -26,7 +24,6 @@
 </head>
 <body class="bg-slate-900 text-gray-300">
 
-    <!-- Header / Navigation -->
     <header class="bg-slate-800/80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-white tracking-wider">Bradley Smith</a>
@@ -38,58 +35,63 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main class="container mx-auto px-6 py-12">
 
-        <!-- Hero / About Section --><section id="about" class="min-h-[70vh] flex items-center py-12">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        <!-- Text Content --><div class="max-w-3xl md:w-2/3 lg:w-3/5 text-center md:text-left">
-            <h2 class="text-sm font-mono text-cyan-400">Hi, my name is</h2>
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mt-2">Bradley Smith.</h1>
-            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-400 mt-2">I build and defend digital environments.</h3>
+        <section id="about" class="min-h-[70vh] flex items-center py-12">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="max-w-3xl md:w-2/3 lg:w-3/5 text-center md:text-left">
+                    <h2 class="text-sm font-mono text-cyan-400">Hi, my name is</h2>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mt-2">Bradley Smith.</h1>
+                    <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-400 mt-2">I build and defend digital environments.</h3>
 
-            <div class="mt-6 text-lg max-w-xl mx-auto md:mx-0 space-y-5">
-            <p>
-                I'm a <strong class="text-cyan-400">GCIH-certified Incident Handler</strong> and <strong class="text-cyan-400">U.S. Army Cyber Operations Specialist</strong> (TS-SCI) with a passion for protecting critical infrastructure. [cite_start]My technical skills are forged in my SANS Institute education [cite: 2] [cite_start]and hands-on military experience in network defense, forensics, and vulnerability analysis. [cite: 45, 46]
-            </p>
-            <p>
-                Before cybersecurity, I spent a decade as a critical care <strong class="text-cyan-400">ECMO Specialist</strong> and <strong class="text-cyan-400">Technical Educator</strong>. [cite_start]This high-stakes career of managing life-support systems [cite: 24, 28] and training technical teams built my foundation for incident response, complex systems analysis, and meticulous risk management.
-            </p>
-            <p>
-                I thrive on the hands-on challenges I find in my homelab, CTF competitions, and professional work. I am actively seeking full-time roles in Incident Response, Digital Forensics, or a Security Operations Center (SOC).
-            </p>
-</div>
+                    <div class="mt-6 text-lg max-w-xl mx-auto md:mx-0 space-y-5">
+                        <p>
+                            I'm a <strong class="text-cyan-400">GCIH-certified Incident Handler</strong> and <strong class="text-cyan-400">U.S. Army Cyber Operations Specialist</strong> (TS-SCI) with a passion for protecting critical infrastructure. My technical skills are forged in my SANS Institute education and hands-on military experience in network defense, forensics, and vulnerability analysis.
+                        </p>
+                        <h4 class="text-lg font-bold text-cyan-400 mt-4">My Journey to Cyber (The "Why")</h4>
+                        <p>
+                            My initial interest in cybersecurity grew directly from my previous role as a critical care <strong class="text-cyan-400">ECMO Specialist</strong> and <strong class="text-cyan-400">Technical Educator</strong>. This high-stakes career of managing life-support systems and training technical teams built my foundation for meticulous risk management and incident response. The transition to network defense was a natural one, driven by the desire to protect the digital systems that now underpin all critical infrastructure, including healthcare.
+                        </p>
+                        <h4 class="text-lg font-bold text-cyan-400 mt-4">CTF & NCL Reflection</h4>
+                        <p>
+                            I thrive on the hands-on challenges I find in my homelab and CTF competitions. The National Cyber League (NCL) competition was pivotal, forcing me to apply academic knowledge under pressure. I achieved a Top 10% placement in the Individual Competition (772nd out of 7869 competitors) (My team achieved a **Top 2% ranking (74th out of 4,214 teams)**, validating my foundational skills in analysis and collaboration.
+                        </p>
+                        <p>
+                            <strong class="text-cyan-400">NCL Highlight:</strong> My most successful engagement was securing **100% accuracy and perfect scores** in both the **Forensics** and **Scanning & Reconnaissance** modules in the Team Game. This demonstrated not just knowledge, but procedural discipline and attention to detail when examining evidence and mapping systems.
+                        </p>
+                        <p>
+                            I am actively seeking full-time roles in Incident Response, Digital Forensics, or a Security Operations Center (SOC).
+                        </p>
+                    </div>
 
-            <!-- Social Links --><div class="mt-8 flex justify-center md:justify-start space-x-6">
-                <a href="https://github.com/smith-bradley" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors" title="GitHub">
-                    <span class="sr-only">GitHub</span>
-                    <!-- GitHub Icon SVG --><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/bradleysmithcyberoperations" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors" title="LinkedIn">
-                    <span class="sr-only">LinkedIn</span>
-                    <!-- LinkedIn Icon SVG --><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
-                    </svg>
-                </a>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-6">
+                        <a href="https://github.com/smith-bradley" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors" title="GitHub">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.951 0-1.093.39-1.988 1.03-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bradleysmithcyberoperations" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-cyan-400 transition-colors" title="LinkedIn">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3 lg:w-2/5 flex justify-center md:justify-end mt-8 md:mt-0">
+                    <img src="bradley-smith-profile.jpg" alt="Bradley Smith Profile" class="rounded-full w-64 h-64 object-cover border-4 border-cyan-500 shadow-lg transition-all duration-300 transform hover:scale-105">
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Image Content --><div class="md:w-1/3 lg:w-2/5 flex justify-center md:justify-end mt-8 md:mt-0">
-            <img src="bradley-smith-profile.jpg" alt="Bradley Smith Profile" class="rounded-full w-64 h-64 object-cover border-4 border-cyan-500 shadow-lg transition-all duration-300 transform hover:scale-105">
-        </div>
-    </div>
-</section>
-
-        <!-- Projects Section -->
         <section id="projects" class="py-20">
             <h2 class="text-3xl font-bold text-white text-center">My Projects</h2>
             <div class="w-20 h-1 bg-cyan-400 mx-auto mt-2 mb-12"></div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project Card 1: Homelab -->
                 <div class="bg-slate-800 rounded-lg shadow-xl overflow-hidden project-card transition-all duration-300 transform hover:-translate-y-1">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-2">Cyber Defense Homelab</h3>
@@ -106,12 +108,11 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2: National Cyber League -->
                 <div class="bg-slate-800 rounded-lg shadow-xl overflow-hidden project-card transition-all duration-300 transform hover:-translate-y-1">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-2">National Cyber League (NCL)</h3>
                         <p class="mb-4">
-                            Placed in the [Xth] percentile in a national CTF competition. Specialized in log analysis, cryptography, and network traffic analysis.
+                            Achieved a **Top 10% Individual Ranking** and led the team to a **Top 2%** ranking nationally in the Fall 2025 Standard Bracket. **Highlight:** Secured perfect scores in Forensics and Scanning & Reconnaissance modules.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="bg-cyan-900/50 text-cyan-300 text-xs font-mono px-3 py-1 rounded-full">CTF</span>
@@ -119,11 +120,10 @@
                             <span class="bg-cyan-900/50 text-cyan-300 text-xs font-mono px-3 py-1 rounded-full">Cryptography</span>
                             <span class="bg-cyan-900/50 text-cyan-300 text-xs font-mono px-3 py-1 rounded-full">Forensics</span>
                         </div>
-                        <a href="#" class="font-mono text-cyan-400 hover:underline">See Competition Write-up &rarr;</a>
+                        <a href="#" class="font-mono text-cyan-400 hover:underline">See 2025 Scouting Report &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Project Card 3: NSA Codebreaker -->
                 <div class="bg-slate-800 rounded-lg shadow-xl overflow-hidden project-card transition-all duration-300 transform hover:-translate-y-1">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-2">NSA Codebreaker Challenge</h3>
@@ -142,16 +142,16 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="text-center py-20">
             <h2 class="text-3xl font-bold text-white">Get In Touch</h2>
             <div class="w-20 h-1 bg-cyan-400 mx-auto mt-2 mb-8"></div>
 
             <p class="text-lg max-w-lg mx-auto mb-8">
-                I'm always looking for new opportunities and challenges. Whether you have a question, a project idea, or just want to connect, feel free to reach out.
+                I'm always looking for new opportunities and challenges.
+                Whether you have a question, a project idea, or just want to connect, feel free to reach out.
             </p>
             
-            <a href="mailto:your-email@example.com" class="bg-cyan-500 text-slate-900 font-bold font-mono py-3 px-6 rounded-lg shadow-lg hover:bg-cyan-400 transition-all duration-300 transform hover:-translate-y-0.5">
+            <a href="mailto:bradley.o.smith2@gmail.com" class="bg-cyan-500 text-slate-900 font-bold font-mono py-3 px-6 rounded-lg shadow-lg hover:bg-cyan-400 transition-all duration-300 transform hover:-translate-y-0.5">
                 Say Hello
             </a>
             
@@ -160,7 +160,3 @@
             </p>
         </section>
     </main>
-
-
-    <!-- Footer -->
-
