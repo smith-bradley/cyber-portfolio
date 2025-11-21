@@ -49,7 +49,7 @@
                         <p>
                             I'm a <strong class="text-cyan-400">GCIH-certified Incident Handler</strong> and <strong class="text-cyan-400">U.S. Army Cyber Operations Specialist</strong> (TS-SCI) with a passion for protecting critical infrastructure. My technical skills are forged in my SANS Institute education and hands-on military experience in network defense, forensics, and vulnerability analysis.
                         </p>
-                        <h4 class="text-lg font-bold text-cyan-400 mt-4">My Journey to Cyber (The "Why")</h4>
+                        <h4 class="text-lg font-bold text-cyan-400 mt-4">My Journey to Cyber</h4>
                         <p>
                             My initial interest in cybersecurity grew directly from my previous role as a critical care <strong class="text-cyan-400">ECMO Specialist</strong> and <strong class="text-cyan-400">Technical Educator</strong>. This high-stakes career of managing life-support systems and training technical teams built my foundation for meticulous risk management and incident response. The transition to network defense was a natural one, driven by the desire to protect the digital systems that now underpin all critical infrastructure, including healthcare.
                         </p>
@@ -87,6 +87,7 @@
                 </div>
 
                 <div class="md:w-1/3 lg:w-2/5 flex justify-center md:justify-end mt-8 md:mt-0">
+                    <!-- Make sure this image exists in your root folder -->
                     <img src="bradley-smith-profile.jpg" alt="Bradley Smith Profile" class="rounded-full w-64 h-64 object-cover border-4 border-cyan-500 shadow-lg transition-all duration-300 transform hover:scale-105">
                 </div>
             </div>
@@ -98,6 +99,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
+                <!-- Homelab Project -->
                 <div class="bg-slate-800 rounded-lg shadow-xl overflow-hidden project-card transition-all duration-300 transform hover:-translate-y-1">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-2">Enterprise Security Monitoring Homelab</h3>
@@ -114,22 +116,34 @@
                     </div>
                 </div>
 
+                <!-- NCL Project (Updated) -->
                 <div class="bg-slate-800 rounded-lg shadow-xl overflow-hidden project-card transition-all duration-300 transform hover:-translate-y-1">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-2">National Cyber League (NCL)</h3>
                         <p class="mb-4">
                             Achieved a Top 10% Individual Ranking and assisted the team to a Top 2% ranking nationally in the Fall 2025 Standard Bracket. Highlight: Consistent contributor in Password Cracking, Log Analysis, and Cryptography modules, securing 100% accuracy in Cryptography and full points in Log Analysis.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
+                        <div class="flex flex-wrap gap-2 mb-6">
                             <span class="bg-cyan-900/50 text-cyan-300 text-xs font-mono px-3 py-1 rounded-full">CTF</span>
                             <span class="bg-cyan-900/50 text-cyan-300 text-xs font-mono px-3 py-1 rounded-full">Log Analysis</span>
                             <span class="bg-cyan-900/50 text-cyan-300 text-xs font-mono px-3 py-1 rounded-full">Cryptography</span>
                             <span class="bg-cyan-900/50 text-cyan-300 text-xs font-mono px-3 py-1 rounded-full">Forensics</span>
                         </div>
-                        <a href="assets/writeups/ncl_scouting_report.pdf" target="_blank" rel="noopener noreferrer" class="font-mono text-cyan-400 hover:underline">View Scouting Report &rarr;</a>
+                        
+                        <!-- Dual Report Links -->
+                        <div class="flex flex-col sm:flex-row gap-4 border-t border-slate-700 pt-4 mt-4">
+                            <a href="assets/writeups/ncl/2025/individual_scouting_report.pdf" target="_blank" rel="noopener noreferrer" class="font-mono text-cyan-400 hover:text-cyan-300 hover:underline flex items-center">
+                                <span class="mr-2">📄</span> Individual Report &rarr;
+                            </a>
+                            <a href="assets/writeups/ncl/2025/team_scouting_report.pdf" target="_blank" rel="noopener noreferrer" class="font-mono text-cyan-400 hover:text-cyan-300 hover:underline flex items-center">
+                                <span class="mr-2">👥</span> Team Report &rarr;
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 
+                <!-- NSA Codebreaker Project -->
                 <div class="bg-slate-800 rounded-lg shadow-xl overflow-hidden project-card transition-all duration-300 transform hover:-translate-y-1">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-white mb-2">NSA Codebreaker Challenge</h3>
@@ -166,4 +180,5 @@
             </p>
         </section>
     </main>
-
+</body>
+</html>
